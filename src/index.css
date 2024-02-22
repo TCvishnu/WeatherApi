@@ -1,0 +1,157 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.page{
+  background: linear-gradient(to bottom right, #A9A9A9, #818589);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  font-family: Comic Sans;
+}
+
+.displayDiv {
+  width: 40%;
+  height: 80vh;
+  border: 2px solid white;
+  border-radius: 5%; 
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  background: linear-gradient(to bottom right, #90EE90, #478778);
+  transition: 0.5s;
+}
+.displayDiv:hover{
+  transform: scale3d(1.05, 1.05, 0.1);
+}
+
+.inputDiv{
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 4%;
+}
+
+.inputDiv input {
+  width: 45%;
+  height: 4.5vh;
+  border-radius: 20px;
+  border: none;
+  text-align: center;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  transition: 0.3s;
+}
+.inputDiv input:focus{
+
+  outline: 4px #478778 solid;
+}
+
+.inputDiv input:hover{
+  transform: scale3d(1.10, 1.10, 1.10);
+}
+
+.inputDiv button {
+  width: 7.5%;
+  height: 5vh;
+  border: none;
+  border-radius: 100%;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  transition: 0.3s;
+}
+
+.inputDiv button:hover{
+  transform: scale3d(1.30, 1.30, 1.30);
+}
+
+.weatherDiv{
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.tempDiv{
+  width: 100%;
+  height: 40vh;
+  margin-top: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.tempDiv img{
+  width: 25%;
+  height: 42%;
+}
+
+.tempDiv h1 {
+  font-size: 230%;
+  margin-bottom: 0%;
+  color: white;
+}
+
+.tempDiv h1 span {
+  font-size: 80%;
+  color: white;
+}
+
+.tempDiv h3{
+  font-size: 150%;
+  color: white;
+  margin-bottom: 0%;
+}
+
+.extraDiv {
+  width: 100%;
+  height: 30vh;
+  display: flex;
+  flex-direction: row;
+}
+
+.extraDiv div{
+  width: 50%;
+  height: 30vh;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  gap: 6%;
+}
+
+.extraDiv div img{
+  width: 30%;
+  height: 10vh;
+}
+
+.extraDiv div p{
+  font-size: 140%;
+  color: white;
+}
+
+.extraDiv div p span{
+  font-size: 120%;
+}
